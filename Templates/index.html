@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor Inteligente com RAG</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .chat-container {
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .chat-header {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .chat-body {
+            background-color: white;
+            height: 500px;
+            overflow-y: auto;
+            padding: 20px;
+        }
+        .message {
+            margin-bottom: 15px;
+            padding: 10px 15px;
+            border-radius: 10px;
+            max-width: 80%;
+        }
+        .user-message {
+            background-color: #e3f2fd;
+            margin-left: auto;
+            border-bottom-right-radius: 0;
+        }
+        .bot-message {
+            background-color: #f1f1f1;
+            margin-right: auto;
+            border-bottom-left-radius: 0;
+        }
+        .source-badge {
+            background-color: #6c757d;
+            color: white;
+            font-size: 0.8em;
+            margin-top: 5px;
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 10px;
+        }
+        .evaluation {
+            background-color: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        #loading {
+            display: none;
+            text-align: center;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>🧠 Tutor Inteligente com RAG</h2>
+                <p class="mb-0">Pergunte sobre qualquer tópico e receba respostas validadas</p>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="message bot-message">
+                    Olá! Sou seu tutor inteligente. Posso responder suas perguntas usando meus conhecimentos e documentos especializados. Cada resposta é validada por um juiz de IA para garantir qualidade. Como posso ajudar?
+                </div>
+            </div>
+            <div class="chat-footer p-3 bg-light">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="userInput" placeholder="Digite sua pergunta...">
+                    <button class="btn btn-primary" id="sendButton">Enviar</button>
+                </div>
+                <div id="loading">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Carregando...</span>
+                    </div>
+                    <p class="mt-2">Processando sua pergunta com RAG e validação...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('sendButton').addEventListener('click', sendMessage);
+        document.getElementById('userInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        function sendMessage() {
+            const userInput = document.getElementById('userInput');
+            const message = userInput.value.trim();
+            
+            if (message === '') return;
+            
+            // Add user message to chat
+            addMessage(message, 'user');
+            userInput.value = '';
+            
+            // Show loading
+            document.getElementById('loading').style.display = 'block';
+            
+            // Scroll to bottom
+            const chatBody = document.getElementById('chatBody');
+            chatBody.scrollTop = chatBody.scrollHeight;
+            
+            // Send to server
+            fetch('/perguntar', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ pergunta: message })
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Hide loading
+                document.getElementById('loading').style.display = 'none';
+                
+                if (data.erro) {
+                    addMessage(data.erro, 'bot');
+                } else {
+                    addMessage(data.resposta, 'bot');
+                }
+                
+                // Scroll to bottom
+                chatBody.scrollTop = chatBody.scrollHeight;
+            })
+            .catch(error => {
+                document.getElementById('loading').style.display = 'none';
+                addMessage('Desculpe, ocorreu um erro ao processar sua pergunta.', 'bot');
+                console.error('Error:', error);
+            });
+        }
+        
+        function addMessage(text, sender) {
+            const chatBody = document.getElementById('chatBody');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}-message`;
+            
+            // Simple formatting for the response
+            let formattedText = text;
+            
+            // Highlight sections
+            formattedText = formattedText.replace(/🎓 Resposta Educacional:/g, '<strong>🎓 Resposta Educacional:</strong>');
+            formattedText = formattedText.replace(/📚 Fontes consultadas:/g, '<br><strong>📚 Fontes consultadas:</strong>');
+            formattedText = formattedText.replace(/🔍 Avaliação da Resposta:/g, '<br><strong>🔍 Avaliação da Resposta:</strong>');
+            
+            // Replace line breaks with HTML breaks
+            formattedText = formattedText.replace(/\n/g, '<br>');
+            
+            messageDiv.innerHTML = formattedText;
+            chatBody.appendChild(messageDiv);
+            
+            // Scroll to bottom
+            chatBody.scrollTop = chatBody.scrollHeight;
+        }
+    </script>
+</body>
+</html>
