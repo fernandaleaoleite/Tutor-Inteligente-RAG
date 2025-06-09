@@ -1,7 +1,8 @@
 from flask import Flask, render_template, request, jsonify
-from modelo import sistema_chat
+from modelo import SistemaChatEducativo
 
 app = Flask(__name__)
+sistema_chat = SistemaChatEducativo()
 
 @app.route('/')
 def index():

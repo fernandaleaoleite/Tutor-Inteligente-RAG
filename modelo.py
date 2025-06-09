@@ -2,11 +2,11 @@ import os
 from dotenv import load_dotenv
 import google.generativeai as genai
 from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
 from langchain.chains import RetrievalQA
 from langchain.text_splitter import CharacterTextSplitter
-from langchain.document_loaders import TextLoader
-from langchain.schema import SystemMessage, HumanMessage
+from langchain_community.document_loaders import TextLoader
+from langchain_core.messages import SystemMessage, HumanMessage
 from datetime import datetime
 import logging
 
@@ -25,6 +25,10 @@ logging.basicConfig(
 
 class SistemaChatEducativo:
     def __init__(self):
+        # Verifica se a chave de API foi fornecida
+        if not api_key:
+            raise ValueError("GEMINI_API_KEY não está configurada!")
+
         # Modelo principal (tutor)
         self.llm_tutor = ChatGoogleGenerativeAI(
             model="gemini-2.0-flash",
@@ -113,7 +117,7 @@ class SistemaChatEducativo:
         """Processa uma pergunta usando RAG e valida com juiz"""
         try:
             # Passo 1: Busca com RAG
-            resposta_rag = self.rag_chain(pergunta)
+            resposta_rag = self.rag_chain.invoke({"query": pergunta})
             resposta_texto = resposta_rag['result']
             fontes = [doc.metadata['source'] for doc in resposta_rag['source_documents']]
             
@@ -122,7 +126,7 @@ class SistemaChatEducativo:
                 SystemMessage(content=self.prompt_juiz),
                 HumanMessage(content=f"Pergunta: {pergunta}\nResposta: {resposta_texto}")
             ]
-            avaliacao = self.llm_juiz(mensagens_juiz).content
+            avaliacao = self.llm_juiz.invoke(mensagens_juiz).content
             
             # Passo 3: Log da conversa
             registro = {

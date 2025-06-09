@@ -1,0 +1,8 @@
+Python é uma linguagem de programação interpretada, de alto nível e com tipagem dinâmica.
+
+Principais estruturas:
+- Variáveis
+- Condicionais (if, elif, else)
+- Laços (for, while)
+- Funções (def nome():)
+- Tipos básicos: int, float, str, list, dict

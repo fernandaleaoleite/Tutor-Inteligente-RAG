@@ -1,0 +1,181 @@
+02-06-2025 08:03:51 - Loading faiss with AVX512 support.
+02-06-2025 08:03:51 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+02-06-2025 08:03:51 - Loading faiss with AVX2 support.
+02-06-2025 08:03:52 - Successfully loaded faiss with AVX2 support.
+02-06-2025 08:03:52 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+02-06-2025 08:03:52 - Sistema RAG carregado com 1 documentos
+02-06-2025 08:03:52 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02-06-2025 08:03:52 - [33mPress CTRL+C to quit[0m
+02-06-2025 08:03:52 -  * Restarting with stat
+02-06-2025 08:03:59 - Loading faiss with AVX512 support.
+02-06-2025 08:03:59 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+02-06-2025 08:03:59 - Loading faiss with AVX2 support.
+02-06-2025 08:03:59 - Successfully loaded faiss with AVX2 support.
+02-06-2025 08:03:59 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+02-06-2025 08:03:59 - Sistema RAG carregado com 1 documentos
+02-06-2025 08:03:59 -  * Debugger is active!
+02-06-2025 08:03:59 -  * Debugger PIN: 119-704-362
+02-06-2025 08:05:41 - 127.0.0.1 - - [02/Jun/2025 08:05:41] "GET / HTTP/1.1" 200 -
+02-06-2025 08:05:41 - 127.0.0.1 - - [02/Jun/2025 08:05:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+02-06-2025 08:05:49 - 127.0.0.1 - - [02/Jun/2025 08:05:49] "[35m[1mPOST /perguntar HTTP/1.1[0m" 500 -
+
+
+OlÃ¡! Sou seu tutor inteligente. Posso responder suas perguntas usando meus conhecimentos e documentos especializados. Cada resposta Ã© validada por um juiz de IA para garantir qualidade. Como posso ajudar?
+como faÃ§o um print em python
+Desculpe, ocorreu um erro ao processar sua pergunta.
+02-06-2025 09:13:46 -  * Detected change in 'c:\\Users\\gabrielcosta-ieg\\OneDrive - Instituto Germinare\\Tech\\3TECH\\Inovacao e Tecnologia\\Tutor-Inteligente-RAG\\modelo.py', reloading
+02-06-2025 09:13:49 -  * Restarting with stat
+02-06-2025 09:13:57 - Loading faiss with AVX512 support.
+02-06-2025 09:13:57 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+02-06-2025 09:13:57 - Loading faiss with AVX2 support.
+02-06-2025 09:13:57 - Successfully loaded faiss with AVX2 support.
+02-06-2025 09:13:57 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+02-06-2025 09:13:57 - Sistema RAG carregado com 1 documentos
+02-06-2025 09:13:57 -  * Debugger is active!
+02-06-2025 09:13:57 -  * Debugger PIN: 119-704-362
+02-06-2025 09:14:13 -  * Detected change in 'c:\\Users\\gabrielcosta-ieg\\OneDrive - Instituto Germinare\\Tech\\3TECH\\Inovacao e Tecnologia\\Tutor-Inteligente-RAG\\modelo.py', reloading
+02-06-2025 09:14:15 -  * Restarting with stat
+02-06-2025 09:14:20 - Loading faiss with AVX512 support.
+02-06-2025 09:14:20 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+02-06-2025 09:14:20 - Loading faiss with AVX2 support.
+02-06-2025 09:14:20 - Successfully loaded faiss with AVX2 support.
+02-06-2025 09:14:20 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+02-06-2025 09:14:20 - Sistema RAG carregado com 1 documentos
+02-06-2025 09:14:20 -  * Debugger is active!
+02-06-2025 09:14:20 -  * Debugger PIN: 119-704-362
+02-06-2025 09:14:47 - Loading faiss with AVX512 support.
+02-06-2025 09:14:47 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+02-06-2025 09:14:47 - Loading faiss with AVX2 support.
+02-06-2025 09:14:47 - Successfully loaded faiss with AVX2 support.
+02-06-2025 09:14:47 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+02-06-2025 09:14:47 - Sistema RAG carregado com 1 documentos
+02-06-2025 09:14:47 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02-06-2025 09:14:47 - [33mPress CTRL+C to quit[0m
+02-06-2025 09:14:47 -  * Restarting with stat
+02-06-2025 09:14:50 - Loading faiss with AVX512 support.
+02-06-2025 09:14:50 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+02-06-2025 09:14:50 - Loading faiss with AVX2 support.
+02-06-2025 09:14:50 - Successfully loaded faiss with AVX2 support.
+02-06-2025 09:14:50 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+02-06-2025 09:14:50 - Sistema RAG carregado com 1 documentos
+02-06-2025 09:14:50 -  * Debugger is active!
+02-06-2025 09:14:50 -  * Debugger PIN: 119-704-362
+02-06-2025 09:15:00 - 127.0.0.1 - - [02/Jun/2025 09:15:00] "GET / HTTP/1.1" 200 -
+02-06-2025 09:15:03 - 127.0.0.1 - - [02/Jun/2025 09:15:03] "[35m[1mPOST /perguntar HTTP/1.1[0m" 500 -
+02-06-2025 09:16:20 -  * Detected change in 'c:\\Users\\gabrielcosta-ieg\\OneDrive - Instituto Germinare\\Tech\\3TECH\\Inovacao e Tecnologia\\Tutor-Inteligente-RAG\\modelo.py', reloading
+02-06-2025 09:16:22 -  * Restarting with stat
+02-06-2025 09:16:27 - Loading faiss with AVX512 support.
+02-06-2025 09:16:27 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+02-06-2025 09:16:27 - Loading faiss with AVX2 support.
+02-06-2025 09:16:27 - Successfully loaded faiss with AVX2 support.
+02-06-2025 09:16:27 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+02-06-2025 09:16:27 - Sistema RAG carregado com 1 documentos
+02-06-2025 09:16:27 -  * Debugger is active!
+02-06-2025 09:16:27 -  * Debugger PIN: 119-704-362
+02-06-2025 09:16:59 - 127.0.0.1 - - [02/Jun/2025 09:16:59] "[35m[1mPOST /perguntar HTTP/1.1[0m" 500 -
+02-06-2025 09:19:56 -  * Detected change in 'c:\\Users\\gabrielcosta-ieg\\OneDrive - Instituto Germinare\\Tech\\3TECH\\Inovacao e Tecnologia\\Tutor-Inteligente-RAG\\routes.py', reloading
+02-06-2025 09:19:58 -  * Restarting with stat
+02-06-2025 09:20:01 - Loading faiss with AVX512 support.
+02-06-2025 09:20:01 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+02-06-2025 09:20:01 - Loading faiss with AVX2 support.
+02-06-2025 09:20:01 - Successfully loaded faiss with AVX2 support.
+02-06-2025 09:20:01 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+02-06-2025 09:20:01 - Sistema RAG carregado com 1 documentos
+02-06-2025 09:20:12 - Loading faiss with AVX512 support.
+02-06-2025 09:20:12 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+02-06-2025 09:20:12 - Loading faiss with AVX2 support.
+02-06-2025 09:20:12 - Successfully loaded faiss with AVX2 support.
+02-06-2025 09:20:12 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+02-06-2025 09:20:12 - Sistema RAG carregado com 1 documentos
+02-06-2025 09:20:13 - Sistema RAG carregado com 1 documentos
+02-06-2025 09:20:13 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02-06-2025 09:20:13 - [33mPress CTRL+C to quit[0m
+02-06-2025 09:20:13 -  * Restarting with stat
+02-06-2025 09:20:17 - Loading faiss with AVX512 support.
+02-06-2025 09:20:17 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+02-06-2025 09:20:17 - Loading faiss with AVX2 support.
+02-06-2025 09:20:17 - Successfully loaded faiss with AVX2 support.
+02-06-2025 09:20:17 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+02-06-2025 09:20:17 - Sistema RAG carregado com 1 documentos
+02-06-2025 09:20:18 - Sistema RAG carregado com 1 documentos
+02-06-2025 09:20:18 -  * Debugger is active!
+02-06-2025 09:20:18 -  * Debugger PIN: 119-704-362
+02-06-2025 09:20:20 - 127.0.0.1 - - [02/Jun/2025 09:20:20] "GET / HTTP/1.1" 200 -
+02-06-2025 09:20:26 - PERGUNTA: oi
+02-06-2025 09:20:26 - RESPOSTA: Olá! Como posso te ajudar hoje?
+02-06-2025 09:20:26 - FONTES: documentos_conhecimento\python_basico.txt
+02-06-2025 09:20:26 - AVALIAÇÃO: \u2705/\u2705 Aprovado
+Pontuação: 50/50
+Análise: A resposta é apropriada e útil.
+Melhorias: Nenhuma.
+02-06-2025 09:20:26 - 127.0.0.1 - - [02/Jun/2025 09:20:26] "POST /perguntar HTTP/1.1" 200 -
+02-06-2025 11:10:55 - PERGUNTA: oi
+02-06-2025 11:10:55 - RESPOSTA: Olá! Como posso te ajudar hoje?
+02-06-2025 11:10:55 - FONTES: documentos_conhecimento\python_basico.txt
+02-06-2025 11:10:55 - AVALIAÇÃO: \u2705/\u2705 Aprovado
+Pontuação: 50/50
+Análise: A resposta é apropriada e útil.
+Melhorias: Nenhuma.
+02-06-2025 11:10:55 - 127.0.0.1 - - [02/Jun/2025 11:10:55] "POST /perguntar HTTP/1.1" 200 -
+09-06-2025 07:21:02 - Loading faiss with AVX512 support.
+09-06-2025 07:21:02 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+09-06-2025 07:21:02 - Loading faiss with AVX2 support.
+09-06-2025 07:21:03 - Successfully loaded faiss with AVX2 support.
+09-06-2025 07:21:03 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+09-06-2025 07:21:03 - Sistema RAG carregado com 1 documentos
+09-06-2025 07:21:04 - Sistema RAG carregado com 1 documentos
+09-06-2025 07:21:04 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+09-06-2025 07:21:04 - [33mPress CTRL+C to quit[0m
+09-06-2025 07:21:04 -  * Restarting with stat
+09-06-2025 07:21:08 - Loading faiss with AVX512 support.
+09-06-2025 07:21:08 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+09-06-2025 07:21:08 - Loading faiss with AVX2 support.
+09-06-2025 07:21:08 - Successfully loaded faiss with AVX2 support.
+09-06-2025 07:21:08 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+09-06-2025 07:21:08 - Sistema RAG carregado com 1 documentos
+09-06-2025 07:21:09 - Sistema RAG carregado com 1 documentos
+09-06-2025 07:21:09 -  * Debugger is active!
+09-06-2025 07:21:09 -  * Debugger PIN: 119-704-362
+09-06-2025 07:21:23 - 127.0.0.1 - - [09/Jun/2025 07:21:23] "GET / HTTP/1.1" 200 -
+09-06-2025 07:21:23 - 127.0.0.1 - - [09/Jun/2025 07:21:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+09-06-2025 07:21:36 - PERGUNTA: oi
+09-06-2025 07:21:36 - RESPOSTA: Olá! Como posso te ajudar hoje?
+09-06-2025 07:21:36 - FONTES: documentos_conhecimento\python_basico.txt
+09-06-2025 07:21:36 - AVALIAÇÃO: \u2705/\u2705 Aprovado
+Pontuação: 50/50
+Análise: A resposta é precisa, clara e adequada para o nível do aluno. Não há exemplos a serem dados, pois é uma saudação. A resposta é útil, pois oferece ajuda.
+Melhorias: Nenhuma
+09-06-2025 07:21:36 - 127.0.0.1 - - [09/Jun/2025 07:21:36] "POST /perguntar HTTP/1.1" 200 -
+09-06-2025 07:22:28 - PERGUNTA: Como faço para fazer um while true?
+09-06-2025 07:22:28 - RESPOSTA: Em Python, um loop "while true" é criado utilizando a palavra-chave `while` seguida pela expressão booleana `True`. Isso cria um loop que se repetirá indefinidamente até que seja explicitamente interrompido por uma instrução `break`.
+
+```python
+while True:
+    # Seu código aqui
+    if alguma_condicao:
+        break
+```
+
+No exemplo acima, o código dentro do loop será executado repetidamente. A instrução `if alguma_condicao:` verifica se uma determinada condição foi atendida. Se a condição for verdadeira, a instrução `break` é executada, o que interrompe o loop e faz com que a execução do programa continue a partir da próxima linha de código após o loop.
+09-06-2025 07:22:28 - FONTES: documentos_conhecimento\python_basico.txt
+09-06-2025 07:22:28 - AVALIAÇÃO: \u2705 Aprovado
+Pontuação: 50/50
+Análise: A resposta é precisa, clara e fornece um exemplo útil. Ela também explica como sair do loop, o que é crucial.
+Melhorias: Nenhuma
+09-06-2025 07:22:28 - 127.0.0.1 - - [09/Jun/2025 07:22:28] "POST /perguntar HTTP/1.1" 200 -
